@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Review Website</title>
+    <link rel="stylesheet" href="user-review.css">
+</head>
+<body>
+    <header>
+        <h1>Create your own review!</h1>
+    </header>
+
+    <main>
+        <section class="review-form">
+            <h2>Submit Your Review</h2>
+            <form id="reviewForm">
+                <!-- Food Category -->
+                <label for="foodCategory">Choose a food category:</label>
+                <select id="foodCategory" required>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Pasta">Pasta</option>
+                </select>
+
+                <!-- Outlet -->
+                <label for="outlet">Choose an outlet:</label>
+                <select id="outlet" required>
+                    <option value="Domino's">Domino's</option>
+                    <option value="McDonald's">McDonald's</option>
+                    <option value="Baskin-Robbins">Baskin-Robbins</option>
+                    <option value="Olive Garden">Olive Garden</option>
+                </select>
+
+                <!-- Rating -->
+                <label for="rating">Rate your experience (1-5):</label>
+                <select id="rating" required>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+
+                <!-- Review Text -->
+                <label for="reviewText">Your Review:</label>
+                <textarea id="reviewText" rows="4" placeholder="Write your review here..." required></textarea>
+
+                <br>
+                <button>
+                  <span class="circle1"></span>
+                  <span class="circle2"></span>
+                  <span class="circle3"></span>
+                  <span class="circle4"></span>
+                  <span class="circle5"></span>
+                  <span class="text">Submit</span>
+              </button>
+            </form>
+        </section>
+
+        <section class="reviews">
+            <h2>All Reviews</h2>
+            <ul id="reviewList">
+                <!-- Reviews will appear here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Review Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
